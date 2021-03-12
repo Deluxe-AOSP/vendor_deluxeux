@@ -15,17 +15,17 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-DEVICE_PACKAGE_OVERLAYS += vendor/LegionParts/overlay/common
-DEVICE_PACKAGE_OVERLAYS += vendor/legionParts/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/deluxeux/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/deluxeux/overlay
 
 # Include Legion theme files
-include vendor/LegionParts/themes/themes.mk
+include vendor/deluxeux/themes/themes.mk
 
 # Include Legion font files
-include vendor/LegionParts/fonts/fonts.mk
+include vendor/deluxeux/fonts/fonts.mk
 
 # Include Legion GVM overlays
-include vendor/LegionParts/Gvm/gvm.mk
+include vendor/deluxeux/Gvm/gvm.mk
 
 # Legion packages
 PRODUCT_PACKAGES += \
@@ -44,4 +44,4 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayHidden
 
 # Switch styles
-include vendor/LegionParts/switch/switch.mk
+include vendor/deluxeux/switch/switch.mk
